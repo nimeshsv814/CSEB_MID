@@ -9,7 +9,10 @@ spec:
   replicas: 3
   strategy:
     blueGreen:
-      activeService: 
+      activeService: skillexchange-active-service
+      previewService: skillexchange-preview-service
+      autoPromotionEnabled: false
+      scaleDownDelaySeconds: 30
   selector:
     matchLabels:
       app: skillexchange-app
