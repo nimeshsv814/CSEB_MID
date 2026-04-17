@@ -25,7 +25,7 @@ spec:
     spec:
       containers:
       - name: skillexchange-app
-        image: hardyboy20/skillexchange-app:latest
+        image: nimeshsv814/skillexchange:v1.1.0
         ports:
         - containerPort: 3000
           name: http
