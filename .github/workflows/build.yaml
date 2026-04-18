@@ -21,7 +21,10 @@ jobs:
     permissions:
       contents: read
       packages: write
-
+    
+    environment:
+      name: production
+      
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
