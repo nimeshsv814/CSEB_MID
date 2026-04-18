@@ -107,7 +107,7 @@ metadata:
     app: skillexchange-app
 spec:
   scaleTargetRef:
-    apiVersion: apps/v1
+    apiVersion: argoproj.io/v1alpha1
     kind: Rollout
     name: skillexchange-app
   minReplicas: 2
